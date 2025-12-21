@@ -5,7 +5,7 @@ All tests use the same browser instance to avoid session issues.
 """
 
 import asyncio
-from gdnium import Browser
+from GDNox import Browser
 
 URL = "https://2captcha.com/demo/cloudflare-turnstile-challenge"
 

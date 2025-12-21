@@ -14,10 +14,10 @@ import json
 import logging
 from typing import Any, Dict, List, Optional, TYPE_CHECKING
 
-from gdnium.core.cdp_client import CDPClient, CDPError
+from GDNox.core.cdp_client import CDPClient, CDPError
 
 if TYPE_CHECKING:
-    from gdnium.core.element import Element
+    from GDNox.core.element import Element
 
 logger = logging.getLogger(__name__)
 
@@ -508,7 +508,7 @@ class Tab:
         Returns:
             Element or None if not found
         """
-        from gdnium.core.element import Element
+        from GDNox.core.element import Element
         
         start_time = asyncio.get_event_loop().time()
         
@@ -542,7 +542,7 @@ class Tab:
         For cross-origin iframes (out-of-process), we use Target.getTargets
         to find the iframe's target and attach to it.
         """
-        from gdnium.core.element import Element
+        from GDNox.core.element import Element
         
         try:
             # Method 1: Get all available targets (includes OOP iframes)
@@ -587,7 +587,7 @@ class Tab:
         
         This is needed for cross-origin iframes like Cloudflare Turnstile.
         """
-        from gdnium.core.element import Element
+        from GDNox.core.element import Element
         
         try:
             # First check if we already have a session from auto-attach
@@ -803,7 +803,7 @@ class Tab:
     
     async def _search_iframe_content(self, iframe_backend_id: int, selector: str) -> Optional["Element"]:
         """Search for element inside an iframe's content document."""
-        from gdnium.core.element import Element
+        from GDNox.core.element import Element
         
         try:
             # Resolve iframe to object
@@ -868,7 +868,7 @@ class Tab:
         We use CDP to get the frame's context and search there, including
         inside any closed shadow roots (like Cloudflare Turnstile uses).
         """
-        from gdnium.core.element import Element
+        from GDNox.core.element import Element
         
         try:
             # Get the iframe's frame ID
@@ -1024,7 +1024,7 @@ class Tab:
         
         A simple querySelector call automatically pierces closed shadow roots.
         """
-        from gdnium.core.element import Element
+        from GDNox.core.element import Element
         
         # Step 1: Try normal querySelector on document root
         root_id = root_node.get("nodeId")
@@ -1095,7 +1095,7 @@ class Tab:
         Returns:
             List of Elements
         """
-        from gdnium.core.element import Element
+        from GDNox.core.element import Element
         
         elements = []
         
@@ -1341,7 +1341,7 @@ class Tab:
                 await request.respond(json={"fake": "data"})
         """
         if self._network is None:
-            from gdnium.core.network import Network
+            from GDNox.core.network import Network
             self._network = Network(self._cdp)
         return self._network
     

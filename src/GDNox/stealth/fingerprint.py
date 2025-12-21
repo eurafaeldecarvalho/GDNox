@@ -12,7 +12,7 @@ import logging
 import random
 from typing import Optional
 
-from gdnium.core.cdp_client import CDPClient
+from GDNox.core.cdp_client import CDPClient
 
 logger = logging.getLogger(__name__)
 

@@ -12,7 +12,7 @@ import logging
 import random
 from typing import Any, Dict, Optional, TYPE_CHECKING
 
-from gdnium.core.cdp_client import CDPClient
+from GDNox.core.cdp_client import CDPClient
 
 if TYPE_CHECKING:
     pass

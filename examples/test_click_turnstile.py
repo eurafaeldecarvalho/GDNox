@@ -3,7 +3,7 @@ Test: Click the Turnstile checkbox and check if captcha is bypassed.
 """
 
 import asyncio
-from gdnium import Browser
+from GDNox import Browser
 
 
 async def main():

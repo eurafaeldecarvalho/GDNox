@@ -201,7 +201,7 @@ async def fake_response(request):
 
 ```python
 import asyncio
-from gdnium import Browser
+from GDNox import Browser
 
 async def main():
     async with Browser() as browser:

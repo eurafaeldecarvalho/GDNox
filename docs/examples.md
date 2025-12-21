@@ -6,7 +6,7 @@ Complete examples for common use cases.
 
 ```python
 import asyncio
-from gdnium import Browser
+from GDNox import Browser
 
 async def scrape_example():
     async with Browser() as browser:

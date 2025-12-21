@@ -9,10 +9,10 @@ Uses CDP techniques:
 import logging
 from typing import Any, Dict, List, Optional, TYPE_CHECKING
 
-from gdnium.core.cdp_client import CDPClient, CDPError
+from GDNox.core.cdp_client import CDPClient, CDPError
 
 if TYPE_CHECKING:
-    from gdnium.core.element import Element
+    from GDNox.core.element import Element
 
 logger = logging.getLogger(__name__)
 

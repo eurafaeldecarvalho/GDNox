@@ -19,9 +19,9 @@ from pathlib import Path
 from typing import Any, Dict, List, Optional
 import aiohttp
 
-from gdnium.core.cdp_client import CDPClient
-from gdnium.core.tab import Tab
-from gdnium.utils.chrome_finder import find_chrome, get_chrome_version
+from GDNox.core.cdp_client import CDPClient
+from GDNox.core.tab import Tab
+from GDNox.utils.chrome_finder import find_chrome, get_chrome_version
 
 logger = logging.getLogger(__name__)
 
@@ -266,7 +266,7 @@ class Browser:
     def _seed_profile(self) -> None:
         """Seed browser profile with realistic history and cookies for stealth."""
         try:
-            from gdnium.stealth.profile import ProfileManager
+            from GDNox.stealth.profile import ProfileManager
             
             profile = ProfileManager(self.user_data_dir)
             profile.seed_history()

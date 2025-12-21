@@ -16,7 +16,7 @@ import logging
 from dataclasses import dataclass, field
 from typing import Any, Callable, Dict, List, Optional, Union
 
-from gdnium.core.cdp_client import CDPClient
+from GDNox.core.cdp_client import CDPClient
 
 logger = logging.getLogger(__name__)
 

@@ -16,7 +16,7 @@ poetry add gdnium
 
 ```python
 import asyncio
-from gdnium import Browser
+from GDNox import Browser
 
 async def main():
     # Launch browser

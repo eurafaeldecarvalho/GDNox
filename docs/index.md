@@ -24,7 +24,7 @@ Undetectable browser automation library with stealth features.
 
 ```python
 import asyncio
-from gdnium import Browser
+from GDNox import Browser
 
 async def main():
     async with Browser() as browser:
