@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://pypi.org/project/gdnox/"><img src="https://img.shields.io/pypi/v/gdnox?color=blue&label=PyPI" alt="PyPI Version"></a>
   <a href="https://pypi.org/project/gdnox/"><img src="https://img.shields.io/pypi/pyversions/gdnox" alt="Python Versions"></a>
-  <a href="https://github.com/rafaelgdn/GDNox/blob/main/LICENSE"><img src="https://img.shields.io/github/license/rafaelgdn/GDNox?color=green" alt="License"></a>
+  <a href="https://github.com/rafaelgdn/GDNox/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-PolyForm%20NC-blue" alt="License"></a>
   <a href="https://github.com/rafaelgdn/GDNox"><img src="https://img.shields.io/github/stars/rafaelgdn/GDNox?style=social" alt="GitHub Stars"></a>
 </p>
 
@@ -308,9 +308,11 @@ async with Browser(user_data_dir="/path/to/profile", auto_seed=False) as browser
 
 ---
 
-##  License
+## 📄 License
 
-Apache License 2.0 - See [LICENSE](LICENSE) for details.
+**PolyForm Noncommercial 1.0.0** - Free for personal and non-commercial use only.
+
+See [LICENSE](LICENSE) for details. For commercial licensing, contact: rafaeldecarvalho.ps@gmail.com
 
 ---
 

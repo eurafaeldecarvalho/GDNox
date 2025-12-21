@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "gdnox"
-version = "0.1.0"
+version = "0.1.1"
 description = "Undetectable browser automation library with stealth features, closed Shadow DOM access, and antibot bypass capabilities"
 authors = ["Rafael <rafaeldecarvalho.ps@gmail.com>"]
-license = "Apache-2.0"
+license = "PolyForm-Noncommercial-1.0.0"
 readme = "README.md"
 repository = "https://github.com/rafaelgdn/GDNox"
 homepage = "https://github.com/rafaelgdn/GDNox"
@@ -22,7 +22,7 @@ keywords = [
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: Apache Software License",
+    "License :: Other/Proprietary License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
